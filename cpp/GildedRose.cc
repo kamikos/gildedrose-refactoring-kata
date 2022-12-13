@@ -50,7 +50,7 @@ void GildedRose::updateQuality()
 
         if (items[i].name != "Sulfuras, Hand of Ragnaros")
         {
-            items[i].sellIn = items[i].sellIn - 1;
+            items[i].sellIn--;
         }
 
         if (items[i].sellIn < 0)
@@ -69,7 +69,7 @@ void GildedRose::updateQuality()
                 }
                 else
                 {
-                    items[i].quality = items[i].quality - items[i].quality;
+                    items[i].quality = 0;
                 }
             }
             else
